@@ -1,0 +1,25 @@
+@media only screen and (min-width: 992px) {
+	#topbar {
+		background-color: red;
+		padding: 3rem .5rem 1rem .5rem;
+	}
+
+	#brand {
+		position: absolute;
+		top: -7rem;
+   	left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    display: block;
+    margin: auto;
+	}
+
+	#signin-btn {
+		background-color: #f72210 !important;
+    border: 1px solid #f72210 !important;
+	}
+
+	#subscribe-btn {
+		color: #f72210 !important;
+	}
+}
