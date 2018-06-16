@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 	<title>Newsweek - News, Analysis, Politics, Business, Technology</title>
 </head>
 <body class="font-changer">
 	<div class="container">
-		<header class="page-header">
+		<header id="page-header">
 			<nav class="navbar navbar-dark" id="topbar">
 				<div class="navbar-nav dropdown text-uppercase">
 					<a class="navbar-link text-white font-weight-bold" data-toggle="dropdown" aria-expanded="false" href="#">u.s. edition <i class="fa fa-chevron-down"></i></a>
@@ -28,49 +29,52 @@
 					</div>
 				</div>
 				<div class="navbar-nav btn-group d-flex flex-row">
-					<button type="button" class="btn btn-dark font-weight-bold rounded-0" id="signin-btn">SIGN IN</button>
-					<button type="button" class="btn btn-light rounded-0 font-weight-bold" id="subscribe-btn">SUBSCRIBE <i class="fa fa-chevron-right"></i></button>
+					<button type="button" class="btn btn-dark btn-signin font-weight-bold rounded-0" id="signin-btn">SIGN IN</button>
+					<button type="button" class="btn btn-light btn-subscribe rounded-0 font-weight-bold" id="subscribe-btn">SUBSCRIBE <i class="fa fa-chevron-right"></i></button>
 				</div>
 			</nav>
 			<nav class="navbar navbar-expand-lg navbar-dark py-0">
 				<a href="#" class="navbar-brand py-0 font-weight-bold" id="brand">Newsweek</a>
+				<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#tobeburger">
+					<i class="fa fa-bars fa-lg text-white"></i>
+				</button>
 			</nav>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav font-weight-bold nav-links-fp">
-						<li nav-item>
+			<nav class="navbar navbar-expand-lg navbar-light bg-white" id="tobeburger-container">
+					<ul class="navbar-nav font-weight-bold nav-links-fp collapse navbar-collapse nav-justified" id="tobeburger">
+						<li>
+							<div class="input-group" id="btn-search">
+								<input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+								<i class="fa fa-search fa-lg"></i>
+							</div>
+						</li>
+						<li>
 							<a class="nav-link" href="#">U.S.</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">World</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Business</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Tech and Science</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Culture</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Sports</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Health</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link padding-plus" href="#">Opinion</a>
 						</li>
-						<li nav-item>
+						<li>
 							<a class="nav-link no-border padding-plus" href="#">Green Rankings</a>
 						</li>
 					</ul>
-					<form class="form-inline">
-						<input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-						<i class="fa fa-search fa-lg"></i>
-					</form>
-				</div>
 			</nav>
 		</header>
 		<main class="container-fluid">
@@ -240,7 +244,7 @@
 					</section>
 				</div>
 				<div class="float-left col-lg-3 col-md-12 col-sm-12 col-xs-12">
-					<section class="float-left opinion col-xs-12">
+					<section class="float-left opinion col-md-12">
 						<h2 class="text-uppercase section-title font-weight-bold">opinion</h2>
 						<article class="opinion-item clearfix">
 								<a class="opinion-img-wrap float-left" href="#">
@@ -291,7 +295,7 @@
 							</div>
 						</article>
 					</section>
-					<section class="float-left latest col-xs-12">
+					<section class="float-left latest col-md-12">
 						<h2 class="section-title text-uppercase font-weight-bold">latest news</h2>
 						<article class="latest-item clearfix">
 							<a href="#" class="latest-img-wrap float-left">
@@ -507,7 +511,7 @@
 								editor's pick
 							</div>
 							<section class="row">
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">U.S.</a>
@@ -521,7 +525,7 @@
 									</h3>
 									<span class="featured-description">“After a delicious meal of soft cat food, #mprraccoon has been caught and will be picked up by Wildlife Management."</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">U.S.</a>
@@ -535,7 +539,7 @@
 									</h3>
 									<span class="featured-description">Countries who go against Washington’s “arrogant policies and excessive demands” are frequently “accused of violating [a] human right,” the report said.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">U.S.</a>
@@ -549,7 +553,7 @@
 									</h3>
 									<span class="featured-description">Scientists found that different levels of sleep could affect men and women differently.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">U.S.</a>
@@ -563,7 +567,7 @@
 									</h3>
 									<span class="featured-description">Researchers think the infant planets are behind weird kinks and grooves in the star's gas-filled disk.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">TECH and SCIENCE</a>
@@ -577,7 +581,7 @@
 									</h3>
 									<span class="featured-description">The Russian businessman has been dubbed “Putin’s Chef” because he owns multiple restaurants the Russian leader has visited frequently.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">U.S.</a>
@@ -591,7 +595,7 @@
 									</h3>
 									<span class="featured-description">Spain's start to the World Cup is certainly filled with turmoil.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">SPORTS</a>
@@ -605,7 +609,7 @@
 									</h3>
 									<span class="featured-description">Calcification was found in the hippocampus, a small organ which plays a key role in our brain's ability to store memories.</span>
 								</article>
-								<article class="col-sm-6 col-md-3 editors-item">
+								<article class="col-sm-6 editors-item">
 									<div class="wrap">
 										<div class="corner">
 											<a href="#" class="font-weight-bold">HEALTH</a>
@@ -707,7 +711,398 @@
 								</article>
 							</section>
 						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
+						<div class="catnews clearfix col-sm-12 float-left">
+							<div class="catnews-title font-weight-bold text-uppercase d-flex">
+								<a href="#"> 
+									U.S.
+								</a>
+							</div>
+							<section class="row">
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-1-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Is Obama Coming Back? Democrats Cry For Help</a>
+									</h3>
+								</article>
+								<article class="col-md-4 catnews-item">
+									<div class="wrap">
+											<a href="#">
+												<img class="img-fluid" src="catnews-2-pic.webp">
+										</a>
+									</div>
+									<h3 class="catnews-item-title font-weight-bold">
+										<a href="#">Several Injured After Florida Rollercoaster Derails</a>
+									</h3>
+								</article>
+								<section class="col-md-4 catnews-small">
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-3-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">American Student Arrested in Vietnam After Protests</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-4-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Jews Are Smartest Race in the World, Israeli Lawmaker</a>
+										</div>
+									</article>
+									<article class="clearfix catnews-small-wrap">
+										<a href="#" class="catnews-small-img-wrap float-left">
+											<img src="catnews-5-pic.webp" class="img-fluid">
+										</a>
+										<div>
+											<a href="#" class="latest-link font-weight-bold">Putin Jokes With MBS as Russia Defeats Saudi Arabia</a>
+										</div>
+									</article>
+								</section>
+							</section>
+						</div>
 				</div>
+				<footer>
+					<div class="footer-top container d-flex col-md-12">
+						<div class="footer-top-left">
+							<a class="big-logo-link" href="#">
+								Newsweek
+							</a>
+							<small class="text-uppercase">
+								© 2018 <a href="#">NEWSWEEK LLC</a>
+							</small>
+						</div>
+						<div class="footer-top-left nav">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook-f fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter-square fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-google-plus-square fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-tumblr-square fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-linkedin fa-2x"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav footer-bottom">
+						<a href="#">About</a>
+						<a href="#">Corrections</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Newsweek Media Group</a>
+						<a href="#">Travel</a>
+						<a href="#">Advertise</a>
+						<a href="#">Copyright</a>
+						<a href="#">Terms and Conditions</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Cookie Policy</a>
+						<a href="#">Terms of Sale</a>
+						<a href="#">Archive</a>
+						<a href="#">Consent preferences</a>
+					</div>
+				</footer>
 		</main>
 
 

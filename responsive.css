@@ -1,9 +1,8 @@
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
 	#topbar {
 		background-color: red;
 		padding: 3rem .5rem 1rem .5rem;
 	}
-
 	#brand {
 		position: absolute;
 		top: -7rem;
@@ -14,6 +13,7 @@
     margin: auto;
 	}
 
+
 	#signin-btn {
 		background-color: #f72210 !important;
     border: 1px solid #f72210 !important;
@@ -22,7 +22,102 @@
 	#subscribe-btn {
 		color: #f72210 !important;
 	}
+
+	#tobeburger ul li:first-of-type {
+		order: 10;
+		width: 150px;
+	}
+
+	.fa-search {
+		padding-top: 10px;
+	}
+
 }
+
+
+@media only screen and (max-width: 992px) {
+
+	main {
+		padding-top: 100px;
+	}
+
+	#brand {
+		font-size: 1.8rem;
+	}
+
+	.fa-chevron-down {
+		display: none;
+	}
+
+	#page-header {
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		background-color: red;
+	}
+
+	#page-header nav:last-child {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	#topbar {
+		background-color: black;
+		padding: 0;
+		padding-left: 1rem;
+	}
+
+	.btn-signin,
+	.btn-subscribe {
+		font-size: 14px;
+	}
+
+	.btn-signin {
+		background-color: black;
+		border: none;
+	}
+
+	.btn-subscribe {
+		color: red;
+	}
+
+	.btn-subscribe i {
+		display: none;
+	}
+
+	#tobeburger-container {
+		position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 220px;
+    background-color: white;
+	}
+
+	#tobeburger {
+		align-items: stretch;
+	}
+
+	.form-control {
+		border: none;
+	}
+
+	#tobeburger li:hover {
+		background-color: black;
+		color: white;
+	}
+
+	#tobeburger li a:hover {
+		color: white;
+	}
+
+	#tobeburger li:first-of-type:hover {
+		background-color: white;
+		color: black;
+	}
+
+}
+
+
 
 
 @media (min-width: 576px) {

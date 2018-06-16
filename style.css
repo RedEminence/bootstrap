@@ -34,8 +34,12 @@ main {
 
 .nav-link {
 	border-right: 1px solid #d9d9d9;
-	padding-right: 1.2rem !important;
-	padding-left: 1.2rem !important;
+	padding-right: 1.4rem !important;
+	padding-left: 1.4rem !important;
+}
+
+.fa-search {
+		padding-top: 10px;
 }
 
 
@@ -195,12 +199,14 @@ main {
 }
 
 
-.latest-item {
+.latest-item,
+.catnews-small-wrap {
 	border-top: 1px solid #d9d9d9;
 	padding-top: 10px;
 }
 
-.latest article:first-of-type {
+.latest article:first-of-type,
+.catnews-small article:first-of-type {
 	border-top: none;
 	padding-top: 0;
 }
@@ -211,7 +217,8 @@ main {
 	margin-top: 25px;
 }
 
-.latest-img-wrap {
+.latest-img-wrap,
+.catnews-small-img-wrap {
 	width: 100px;
 	height: 80px;
 	margin-right: 15px;
@@ -375,6 +382,11 @@ main {
 	border-bottom: 1px solid #d9d9d9;
 }
 
+.slideshows {
+	margin-bottom: 30px;
+}
+
+
 .corner-slideshow {
 	position: absolute;
 	background: url(corner-pic.webp) 0 0/contain no-repeat;;
@@ -396,3 +408,103 @@ main {
 .slideshows-item {
 	margin-top: 30px;
 }
+
+.catnews {
+	padding-top: 25px;
+	border-top: 1px solid #d9d9d9;
+	margin-bottom: 20px;
+}
+
+.catnews-item {
+	margin-bottom: 20px;
+}
+
+
+
+.catnews-title a {
+	color: red;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+.catnews-item-title {
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.catnews-item-title a {
+	color: black;
+}
+
+.catnews-item-title a:hover {
+	text-decoration-color: red;
+}
+
+ul {
+	list-style: none;
+	display: inline-block;
+}
+
+.big-logo-link {
+	color: red;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 40px;
+}
+
+.big-logo-link:hover {
+	text-decoration: none;
+	color: red;
+}
+
+
+.footer-top-left ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer-top-left ul li a {
+	color: grey;
+}
+
+.footer-top-left ul li a:hover {
+	color: blue;
+}
+
+small a {
+	color: grey;
+}
+
+small {
+	color: grey;
+	margin-left: 10px;
+}
+
+small a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.footer-top {
+	border-bottom: 1px solid #d9d9d9;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.footer-bottom {
+	margin-bottom: 30px;
+}
+
+.footer-bottom a {
+	color: grey;
+	padding: 0 10px 0 10px;
+	border-right: 1px solid #d9d9d9;
+}
+
+.footer-bottom a:last-child {
+	border-right: none;
+}
+
+.img-fluid {
+	width: 100%;
+}
+
